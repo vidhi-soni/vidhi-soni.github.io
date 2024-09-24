@@ -4,11 +4,39 @@
     align-items: center;
     justify-content: center;
     height: 60vh;
-    background-image: url('images/hero-bg.jpg');
+    background-image: url('images/background-small.jpg');
     background-size: cover;
     background-position: center;
-    color: rgb(93, 85, 85);
-    text-align: center;
+    color: rgb(254, 254, 254);
+
+}
+
+/* Background image for extra-small screens */
+@media (max-width: 479px) {
+    .hero-section {
+        background-image: url('images/background-extra-small.jpg');
+    }
+}
+
+/* Background image for medium screens */
+@media (min-width: 768px) {
+    .hero-section {
+        background-image: url('images/background-medium.jpg');
+    }
+}
+
+/* Background image for large screens */
+@media (min-width: 1024px) {
+    .hero-section {
+        background-image: url('images/background-large.jpg');
+    }
+}
+
+/* Background image for extra-large screens */
+@media (min-width: 1440px) {
+    .hero-section {
+        background-image: url('images/background-extra-large.jpg');
+    }
 }
 
 /* Specific styles for the feature articles */
@@ -33,8 +61,22 @@
     background-color: #105f84; 
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
     z-index: 2; /* text is above the image */
+}
+
+.features-section ol,
+.features-section ul {
+    text-align: left;
+}
+
+.shop-now-btn {
+    position: relative;
+    z-index: 3; 
+}
+
+.shop-now-btn:hover {
+    background-color: #3b3b45; 
+    color: #000000; 
 }
 
 /* About section with background color */
@@ -52,5 +94,4 @@
     border-radius: 8px;
     text-align: center;
 }
-
 
