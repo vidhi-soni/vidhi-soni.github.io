@@ -1,0 +1,56 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(93, 85, 85);
+    text-align: center;
+}
+
+/* Specific styles for the feature articles */
+.features-section .feature:nth-of-type(1)::before,
+.features-section .feature:nth-of-type(2)::before {
+    content: '';
+    background-image: url('images/flourish.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; 
+    z-index: 1;
+}
+
+.features-section .feature:nth-of-type(1),
+.features-section .feature:nth-of-type(2) {
+    position: relative;
+    background-color: #105f84; 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 2; /* text is above the image */
+}
+
+/* About section with background color */
+ .about-section {
+    background-color: #105f84; 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; 
+}
+
+/* CTA section with background color */
+.cta-section {
+    background-color: #3b3b45;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
