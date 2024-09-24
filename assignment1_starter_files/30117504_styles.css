@@ -10,9 +10,7 @@
     color: rgb(93, 85, 85);
     text-align: center;
 }
- .welcome-text {
-    background-image: url('images/background-medium.jpg'); 
-}
+
 /* Specific styles for the feature articles */
 .features-section .feature:nth-of-type(1)::before,
 .features-section .feature:nth-of-type(2)::before {
