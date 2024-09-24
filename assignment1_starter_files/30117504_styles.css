@@ -3,12 +3,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 50vh;
     background-image: url('images/background-small.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(254, 254, 254);
 
+}
+
+/* Could not get svg to work */
+.logo {
+    margin-right: 10px; 
+    z-index: 10; 
 }
 
 /* Background image for extra-small screens */
@@ -61,7 +67,7 @@
     background-color: #105f84; 
     padding: 20px;
     border-radius: 8px;
-    z-index: 2; /* text is above the image */
+    z-index: 2; 
 }
 
 .features-section ol,
@@ -89,9 +95,10 @@
 
 /* CTA section with background color */
 .cta-section {
-    background-color: #3b3b45;
+    background-color: #69696a;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
 }
+
 
